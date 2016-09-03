@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="mui/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="static/style.css" rel="stylesheet" type="text/css" />
+	<link href="css/source.css" rel="stylesheet" type="text/css" />
+    <script src="mui/js/mui.min.js"></script>
+	<script src="js/source.js"></script>
+	
+  </head>
+  <body>
+    <header class="mui-appbar mui--z1">
+      <div class="mui-container">
+        <table width="100%">
+          <tr class="mui--appbar-height">
+            <td class="mui--text-title">Defense Alerts</td>
+            <td align="right">
+              <ul class="mui-list--inline mui--text-body2">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Login</a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </header>
+    <div id="content-wrapper" class="mui--text-center">
+      <div class="mui--appbar-height"></div>
+      <br>
+      <br>
+      <div class="mui--text-display3">Defense Alerts</div>
+      <br>
+      <br>
+	  
+		<div id="map"></div>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZlZS5fymE8VHf53Wp8QKziJ4sYMIwqyo&callback=initMap">
+		</script>
+		<button class="mui-btn mui-btn--raised map-alert-btn">Sign up for instant alert</button>
+    </div>
+    <footer>
+      <div class="mui-container mui--text-center">
+        Comprehensive information about defense alerts! Stay tuned.
+      </div>
+    </footer>
+	<script src="key.js"></script>
+  </body>
+</html>

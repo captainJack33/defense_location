@@ -1,0 +1,13 @@
+#map {
+	height: 50%;
+	width: 50%;  
+	top: 25%;
+	left: 25%;
+	position: absolute;
+}
+
+.map-alert-btn {
+	position: absolute;
+    top: 75%;
+    left: 56%;
+}
