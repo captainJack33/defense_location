@@ -4,7 +4,7 @@
       // failed.", it means you probably did not give permission for the browser to
       // locate you.
 
-      function initMap() {
+      function initMapold() {
 		var lat, long;
         var map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 38.90297959999999, lng: -77.02761120000002},
@@ -36,3 +36,15 @@
         infoWindow.setPosition(pos);
         infoWindow.setContent('You are here!');
       }
+      
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: {lat: 49.496675, lng: -102.65625}
+  });
+
+  var georssLayer = new google.maps.KmlLayer({
+    url: 'http://api.flickr.com/services/feeds/geo/?g=322338@N20&lang=en-us&format=feed-georss'
+  });
+  georssLayer.setMap(map);
+}
